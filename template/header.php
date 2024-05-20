@@ -30,10 +30,16 @@
                     </svg>
                 </button>
                 <div class="absolute flex md:hidden transition-all duration-300 ease-in-out flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-teal-600 max-h-0 group-[.open]:py-4 px-4 rounded-2xl group-[.open]:max-h-64 top-full">
-                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="javascript:void(0)">Accueil</a>
-                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="javascript:void(0)">Les asanas</a>
-                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="javascript:void(0)">Nous contacter</a>
-                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="javascript:void(0)">Ajouter un asana</a>
+                <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php">Accueil</a>
+                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=asanas">Les asanas</a>
+                    <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=contact">Nous-contacter</a>
+                    
+                    <!-- onglets admin -->
+                    <?php if($_SESSION['LOGGED_USER']['role']==='admin') : ?>
+                        <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=addAsana">ajouter un asana</a>
+                        <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=listUsers">Voir les membres</a>
+                    <?php endif ?>
+                        <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=logout">Se déconnecter</a>
                 </div>
             </div>
         </div>

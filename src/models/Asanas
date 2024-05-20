@@ -1,0 +1,19 @@
+<?php
+
+Class Asanas
+{
+    public function getAsanas()
+    {
+
+    }
+
+    public function getAsana(integer $id)
+    {
+
+    }
+
+    public function addAsana(array $asana)
+    {
+        
+    }
+}

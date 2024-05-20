@@ -7,6 +7,11 @@ class Pages{
         require_once(dirname(__DIR__,2).'/template/homepage.php');
     }
 
+    public function contactPage()
+    {
+        require_once(dirname(__DIR__,2).'/template/contact.php');
+    }
+
     public function errorPage($lblError)
     {
         $error=$lblError;

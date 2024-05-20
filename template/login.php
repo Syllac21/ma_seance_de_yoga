@@ -47,7 +47,7 @@ $page = new Pages;
                     </div>
                     <div class="text-right">
                         <a href="../index.php" class="text-teal-200 hover:text-teal-50">Annuler</a>
-                        <a href="../index.php?connect=adduser" class="bg-teal-950 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full">Créer votre compte</a>
+                        <a href="../index.php?connect=adduser" class="hover:bg-teal-700 text-white py-2 px-4 rounded-full">Créer votre compte</a>
                     </div>
             </form>
     </main>

@@ -9,7 +9,7 @@ $page = new Pages;
 
 if(!isset($_SESSION['LOGGED_USER'])){
     if(isset($_GET['connect']) && $_GET['connect']==='adduser'){
-        $pageDisplay=$page->addUserPage();
+        $pageDisplay = $page->addUserPage();
         return;
     }else{
         $pageDisplay=$page->loginPage();
@@ -23,7 +23,9 @@ if(isset($_GET['action']) && $_GET['action'] !== ''){
     if($_GET['action']==='logout'){
         $userObj = new Users;
         $user = $userObj->logout();
-    exit;
+        exit;
+    }elseif($_GET['action']==='contact'){
+        $pageDisplay = $page->contactPage();
     }else{
         $pageDisplay = $page->errorPage('Page en construction');
     }
