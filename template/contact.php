@@ -42,6 +42,7 @@ require_once(__DIR__.'/header.php'); ?>
                     </div>
                     <p class="mt-1 text-sm leading-6 text-gray-600">Décrivez votre demande de façon précise pour que l'on puisse vous répondre efficacement</p>
                 </div>
+                <input type="hidden" name="category">
             </div>
         </div>
     </div>

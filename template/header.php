@@ -20,7 +20,7 @@
                     <?php endif ?>
                         <a class="text-sm font-normal text-teal-950 hover:text-teal-50" href="/index.php?action=logout">Se déconnecter</a>
                 </div>
-                <div class="items-center hidden gap-8 md:flex">
+                <div class="shadow-2xl items-center hidden gap-8 md:flex">
                     
                     <img class="w-full rounded-lg" src="./images/image_header_yoga.png" alt="Logo">
                 </div>

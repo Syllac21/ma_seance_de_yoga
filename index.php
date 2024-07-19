@@ -26,6 +26,8 @@ if(isset($_GET['action']) && $_GET['action'] !== ''){
         exit;
     }elseif($_GET['action']==='contact'){
         $pageDisplay = $page->contactPage();
+    }elseif($_GET['action']==='addAsana'){
+        $pageDisplay = $page->addAsanaPage();
     }else{
         $pageDisplay = $page->errorPage('Page en construction');
     }

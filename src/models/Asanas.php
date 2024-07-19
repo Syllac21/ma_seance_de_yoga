@@ -7,7 +7,7 @@ Class Asanas
 
     }
 
-    public function getAsana(integer $id)
+    public function getAsana($id)
     {
 
     }

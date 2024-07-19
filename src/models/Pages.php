@@ -12,7 +12,7 @@ class Pages{
         require_once(dirname(__DIR__,2).'/template/contact.php');
     }
 
-    public function errorPage($lblError)
+    public function errorPage(string $lblError)
     {
         $error=$lblError;
         require_once(dirname(__DIR__,2).'/template/error.php');
@@ -26,6 +26,11 @@ class Pages{
     public function addUserPage()
     {
         require_once(dirname(__DIR__,2).'/template/adduser.php');
+    }
+
+    public function addAsanaPage()
+    {
+        require_once(dirname(__DIR__,2).'/template/addAsana.php');
     }
 
     public function redirectTO() 
