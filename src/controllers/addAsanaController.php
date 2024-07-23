@@ -59,5 +59,8 @@ $postData['image'] = $fichier;
 $asana = new Asanas;
 if(!$asana->addAsana($postData)){
     $pagedisplay=$page->errorPage('erreur de transfert de données');
+    exit;
+} else {
+    $pagedisplay=$page->redirectTO();
 }
 

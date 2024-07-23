@@ -26,7 +26,7 @@ class Users
             'email'=>$email,
             'password'=>$password,
             'role' =>$role,
-        ]);     
+        ]);
     }
 
     public function logout()

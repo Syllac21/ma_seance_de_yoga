@@ -37,6 +37,6 @@ if(
             $pageDisplay = $page->errorPage('les identifiants saisis ne correpondent pas à un compte existant');
         }
     }
-    header("location: /index.php");
+    $pageDisplay = $page->redirectTO();
     exit;
 } 

@@ -33,9 +33,28 @@ class Pages{
         require_once(dirname(__DIR__,2).'/template/addAsana.php');
     }
 
+    public function asanas()
+    {
+        require_once(dirname(__DIR__,2).'/template/asanas.php');
+    }
+
+    public function asana()
+    {
+        require_once(dirname(__DIR__,2).'/template/asana.php');
+    }
+
+    public function modAsana()
+    {
+        require_once(dirname(__DIR__,2).'/template/modAsana.php');
+    }
+
+    public function listUsersPage(){
+        require_once(dirname(__DIR__,2).'/template/listusers.php');
+    }
+
     public function redirectTO() 
     {
-        header('location: http://ma_seance_de_yoga.test/index.php');
+        header('location: /');
         exit;
     }
 }

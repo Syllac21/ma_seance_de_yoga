@@ -1,17 +1,18 @@
 <?php
+session_start();
+require_once(dirname(__DIR__,1).'/models/Model.php');
+require_once(dirname(__DIR__,1).'/models/Users.php');
+require_once(dirname(__DIR__,1).'/models/Pages.php');
+
+$postData = $_POST;
+$page = new Pages;
+
+
 
 // on vérifie que le visiteur vient de notre site
 
 if(isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] === 'http://ma_seance_de_yoga.test'){
-
-    session_start();
-    require_once(dirname(__DIR__,1).'/models/Model.php');
-    require_once(dirname(__DIR__,1).'/models/Users.php');
-    require_once(dirname(__DIR__,1).'/models/Pages.php');
-
-    $postData = $_POST;
-    $page = new Pages;
-    
+        
     // on vérifie la méthode
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){

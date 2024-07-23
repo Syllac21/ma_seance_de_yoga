@@ -17,6 +17,15 @@ if(!isset($_SESSION['LOGGED_USER'])){
     }
 }
 
+// routeur en fonction du GET id
+if(isset($_GET['id']) && $_GET['id']!=='' && is_numeric($_GET['id'])){
+    if(isset($_GET['action']) && $_GET['action'] !==''){
+        $pageDisplay = $page->modAsana();
+    }else{
+    $pageDisplay=$page->asana();
+    }
+}
+
 // routeur en fonction du GET action
 
 if(isset($_GET['action']) && $_GET['action'] !== ''){
@@ -28,7 +37,11 @@ if(isset($_GET['action']) && $_GET['action'] !== ''){
         $pageDisplay = $page->contactPage();
     }elseif($_GET['action']==='addAsana'){
         $pageDisplay = $page->addAsanaPage();
-    }else{
+    }elseif($_GET['action'] === 'asanas'){
+        $pageDisplay = $page->asanas();
+    } elseif($_GET['action'] === 'listUsers'){
+        $pageDisplay = $page->listUsersPage();
+    } else{
         $pageDisplay = $page->errorPage('Page en construction');
     }
 }else{
