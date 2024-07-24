@@ -38,7 +38,7 @@ if($postData['token'] === $_SESSION['token']){
             exit;
         }
 
-        $pageDisplay = $page->listUsersPage();
+        $pageDisplay = $page->redirectTO();
         exit;
         
     }
