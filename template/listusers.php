@@ -23,7 +23,7 @@ require_once(__DIR__.'/header.php'); ?>
         <!-- chaque ligne de la base de données créée une ligne du tableau qui est un formulaire, on rajouter une colonne avec le bouton envoie -->
         <tbody>
             <?php foreach ($users as $user) : ?>
-                <form action="../index.php?action=listUsers" method="POST" class="mx-auto px-5 w-1/2 flex flex-col justify-center" enctype="multipart/form-data">
+                <form action="../src/controllers/modRoleUser.php" method="POST" class="mx-auto px-5 w-1/2 flex flex-col justify-center" enctype="multipart/form-data">
                     <input type="hidden" name="id" id="id" value="<?=$user['id']?>">
                     <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?? '' ?>"> 
                     <tr>
