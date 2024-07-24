@@ -2,7 +2,7 @@
 
 // on vérifie que le visiteur vient de notre site
 
-if(isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN']==='http://ma_seance_de_yoga.test') {
+if($postData['token'] === $_SESSION['token']) {
     require_once(dirname(__DIR__,2).'/src/models/Users.php');
     require_once(dirname(__DIR__,2).'/src/models/Pages.php');
 

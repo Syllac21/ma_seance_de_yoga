@@ -2,6 +2,7 @@
 require_once(__DIR__.'../../src/models/Pages.php');
 $title = 'Nouveau compte';
 $page = new Pages;
+$_SESSION['token'] = md5(uniqid(mt_rand(), true));
 
 ob_start();
 ?>
@@ -13,7 +14,7 @@ ob_start();
     <main class="container mx-auto my-10 p-5">
         <h2 class="text-center font-semibold leading-7 text-gray-300 text-2xl">Nouveau compte</h2>
         <form action="./src/controllers/addusercontroller.php" method="POST" class="mt-2 px-5 mx-auto w-1/2 flex flex-col justify-center">
-
+            <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?? '' ?>">
             <div class="border-b border-gray-900/10 pb-12">
 
                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">

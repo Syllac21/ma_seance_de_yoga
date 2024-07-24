@@ -11,7 +11,7 @@ $page = new Pages;
 
 // on vérifie que le visiteur vient de notre site
 
-if(isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] === 'http://ma_seance_de_yoga.test'){
+if($postData['token'] === $_SESSION['token']){
         
     // on vérifie la méthode
 

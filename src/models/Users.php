@@ -16,7 +16,8 @@ class Users
         return $users;
     }
 
-    public function addUser(string $firstname, string $lastname, string $email, string $password, string $role) : bool {
+    public function addUser(string $firstname, string $lastname, string $email, string $password, string $role) : bool 
+    {
         $dbc = new Model;
         $mysqlClient = $dbc->dbConnect();
         $addUser = $mysqlClient->prepare('INSERT INTO users(firstname, lastname, email, password, role) VALUES (:firstname, :lastname, :email, :password, :role)');
@@ -26,6 +27,17 @@ class Users
             'email'=>$email,
             'password'=>$password,
             'role' =>$role,
+        ]);
+    }
+
+    public function modRoleUser($postdata)
+    {
+        $dbc = new Model;
+        $mysqlClient = $dbc->dbConnect();
+        $changeRole = $mysqlClient->prepare('UPDATE users SET role = :role WHERE id=:id');
+        return $changeRole->execute([
+            'role'=>$postdata['role'],
+            'id'=>$postdata['id'],
         ]);
     }
 
