@@ -52,11 +52,11 @@ ob_start();
             </div>            
         
 
-        <div class="mt-6 flex items-center justify-end gap-x-6">
-            <a href="../index.php" class="text-teal-200 hover:text-teal-50">Annuler</a>
-            
-            <button type="submit" class="rounded-md bg-teal-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Envoyer</button>
-        </div>
+            <div class="mt-6 flex items-center justify-end gap-x-6">
+                <a href="../index.php" class="text-teal-200 hover:text-teal-50">Annuler</a>
+                
+                <button type="submit" class="rounded-md bg-teal-950 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-teal-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Envoyer</button>
+            </div>
         </form>
 
     </main>

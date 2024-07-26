@@ -24,6 +24,12 @@ class Modfish{
         return $asana;
     }
 
+    /**
+     * modification de l'asana sans changement d'image
+     * 
+     * @param array $postdata
+     * @return boolean
+     */
     public function sendModWithoutImage(array $postData)
     {
         // vérifiation des données

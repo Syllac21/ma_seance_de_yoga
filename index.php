@@ -22,7 +22,7 @@ if(isset($_GET['id']) && $_GET['id']!=='' && is_numeric($_GET['id'])){
     if(isset($_GET['action']) && $_GET['action'] !==''){
         $pageDisplay = $page->modAsana();
     }else{
-    $pageDisplay=$page->asana();
+        $pageDisplay=$page->asana();
     }
 }
 

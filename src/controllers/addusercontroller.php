@@ -51,9 +51,8 @@ if($postData['token'] === $_SESSION['token']){
             $pageDisplay = $page->redirectTO();
                 exit;
         }
-        }
-
-    } else{
-        $pageDisplay = $page->redirectTO();
     }
-    
+
+} else{
+    $pageDisplay = $page->redirectTO();
+}

@@ -53,7 +53,7 @@ require_once(__DIR__.'/header.php'); ?>
         <button type="button" class="text-sm font-semibold leading-3 text-gray-900">Annule</button>
         <button type="submit" class="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Envoie</button>
     </div>
-    </form>
+</form>
 
 
 <?php $content = ob_get_clean(); 
