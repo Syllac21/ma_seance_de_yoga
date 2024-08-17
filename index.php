@@ -41,7 +41,10 @@ if(isset($_GET['action']) && $_GET['action'] !== ''){
         $pageDisplay = $page->asanas();
     } elseif($_GET['action'] === 'listUsers'){
         $pageDisplay = $page->listUsersPage();
-    } else{
+    } elseif($_GET['action'] === 'newSession') {
+        $pageDisplay = $page->newSession();
+    }
+    else{
         $pageDisplay = $page->errorPage('Page en construction');
     }
 }else{

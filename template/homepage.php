@@ -14,10 +14,11 @@ ob_start();?>
             </div>
             <div class="shadow-2xl bg-rose-100 shadow-md rounded p-6">
                 <h2 class="text-2xl text-center font-bold mb-4">Créer une nouvelle séance</h2>
-                <div class="items-center gap-8 md:flex">
-                    <img class="max-w-60 rounded-lg mx-auto" src="./images/image_nouvelle_seance.jpg" alt="lotus">
+                <div class="flex justify-center items-center gap-8">
+                    <a href="/index.php?action=newSession" class="block">
+                        <img class="max-w-60 rounded-lg mx-auto" src="./images/image_nouvelle_seance.jpg" alt="lotus">
+                    </a>
                 </div>
-                
                 <p class="text-center">Choisissez les asanas pour votre nouvelle séance</p>
             </div>
         </div>

@@ -52,6 +52,10 @@ class Pages{
         require_once(dirname(__DIR__,2).'/template/listusers.php');
     }
 
+    public function newSession(){
+        require_once(dirname(__DIR__,2).'/template/newSession.php');
+    }
+    
     public function redirectTO() 
     {
         header('location: /');
